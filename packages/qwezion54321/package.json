@@ -1,0 +1,19 @@
+{
+  "name": "qwezion54321",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "dima <dmitry.c@undock.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/qwezion54321.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/qwezion54321.test.js"
+  }
+}
