@@ -1,0 +1,26 @@
+{
+  "name": "a1zion54321",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "dima <dmitry.c@undock.com>",
+  "homepage": "https://github.com/zion03/test-to-del#readme",
+  "license": "ISC",
+  "main": "lib/a1zion54321.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zion03/test-to-del.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/a1zion54321.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/zion03/test-to-del/issues"
+  }
+}
