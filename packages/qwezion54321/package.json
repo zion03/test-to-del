@@ -16,5 +16,5 @@
   "scripts": {
     "test": "node ./__tests__/qwezion54321.test.js"
   },
-  "gitHead": "baf1631457d98b8fda163456ad41449485a90394"
+  "gitHead": "9b558e8bc16bccf63a59aa118f06c0e14a25d084"
 }
