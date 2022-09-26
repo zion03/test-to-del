@@ -1,6 +1,6 @@
 {
   "name": "a1zion54321",
-  "version": "0.0.10",
+  "version": "0.0.11-alpha.0+0faa34c",
   "description": "> TODO: description",
   "author": "dima <dmitry.c@undock.com>",
   "homepage": "https://github.com/zion03/test-to-del#readme",
@@ -23,5 +23,5 @@
   "bugs": {
     "url": "https://github.com/zion03/test-to-del/issues"
   },
-  "gitHead": "ed37da067d5c1b40bc340b6e5d2cbdd0fdbebf77"
+  "gitHead": "0faa34c72b40389272f4787dbce232993d2b7bc7"
 }
