@@ -1,0 +1,16 @@
+{
+  "name": "cup-texture-converter",
+  "version": "1.0.0",
+  "description": "Convert flat textures to cylindrical cup wrap templates for printing",
+  "main": "lib/cup-texture-converter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["cup", "texture", "printing", "cylindrical", "wrap", "template"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "sharp": "^0.33.0"
+  }
+}
