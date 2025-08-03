@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapered Image Cropper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="canvas-container">
+                <canvas id="imageCanvas"></canvas>
+                <div class="selection-overlay" id="selectionOverlay">
+                    <div class="selection-box" id="selectionBox">
+                        <div class="corner top-left"></div>
+                        <div class="corner top-right"></div>
+                        <div class="corner bottom-left"></div>
+                        <div class="corner bottom-right"></div>
+                        <div class="edge top"></div>
+                        <div class="edge bottom"></div>
+                        <div class="edge left"></div>
+                        <div class="edge right"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls-panel">
+                <div class="toolbar">
+                    <button class="tool-btn" id="zoomIn" title="Zoom In">🔍+</button>
+                    <button class="tool-btn" id="zoomOut" title="Zoom Out">🔍-</button>
+                    <button class="tool-btn" id="resetZoom" title="Reset View">↻</button>
+                    <button class="tool-btn" id="resetSelection" title="Reset Selection">↩</button>
+                </div>
+                
+                <div class="position-controls">
+                    <h3>Image position</h3>
+                    <div class="position-tabs">
+                        <button class="tab-btn active" data-position="single">On the single side</button>
+                        <button class="tab-btn" data-position="two">On the two sides</button>
+                    </div>
+                    
+                    <div class="cup-preview">
+                        <div class="cup-shape" id="cupShape">
+                            <div class="cup-segment" data-value="0.1">0.1</div>
+                            <div class="cup-segment" data-value="0.2">0.2</div>
+                            <div class="cup-segment" data-value="0.3">0.3</div>
+                            <div class="cup-segment" data-value="0.4">0.4</div>
+                            <div class="cup-segment" data-value="0.5">0.5</div>
+                            <div class="cup-segment" data-value="0.6">0.6</div>
+                        </div>
+                    </div>
+                    
+                    <div class="taper-controls">
+                        <label for="taperAmount">Taper Amount:</label>
+                        <input type="range" id="taperAmount" min="0" max="100" value="30">
+                        <span id="taperValue">30%</span>
+                    </div>
+                    
+                    <div class="perspective-controls">
+                        <label for="perspectiveAngle">Perspective Angle:</label>
+                        <input type="range" id="perspectiveAngle" min="-45" max="45" value="0">
+                        <span id="perspectiveValue">0°</span>
+                    </div>
+                </div>
+                
+                <button class="create-btn" id="createCup">CREATE CUP</button>
+                <button class="back-btn" id="backBtn">Back</button>
+            </div>
+        </div>
+        
+        <div class="file-input-container">
+            <input type="file" id="imageInput" accept="image/*" style="display: none;">
+            <button class="upload-btn" onclick="document.getElementById('imageInput').click()">
+                Upload Image
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
